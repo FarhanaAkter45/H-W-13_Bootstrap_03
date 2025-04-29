@@ -1,0 +1,343 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --third-family: "Potta One", sans-serif;
+  --font3: "Baloo Da 2", sans-serif;
+  --black: #353535;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* =============== NAVIGATION START ====================*/
+#nav {
+  padding: 0;
+}
+
+#nav ul li a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 200%;
+  color: #353535;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 18px 20px;
+  position: relative;
+}
+
+#nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--black);
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+#nav ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* =============== NAVIGATION END ======================*/
+
+/* =============== BANNER START ====================*/
+#banner h4 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #353535;
+}
+
+#banner h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 64px;
+  color: #353535;
+}
+
+#banner p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  color: #353535;
+}
+
+#banner .banner_link {
+  margin-top: 50px;
+}
+
+#banner .banner_link a {
+  display: inline-flex;
+  background: rgb(169, 176, 169);
+  padding: 16px 45px;
+  text-decoration: none;
+}
+
+#banner .banner_link a:first-child {
+  background-color: #ffcc00;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 180%;
+  border-radius: 20px;
+}
+
+#banner .banner_link a:last-child {
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 180%;
+  border-radius: 20px;
+  outline: 2px solid var(--black);
+  color: var(--black);
+  margin-left: 40px;
+  padding: 14px 45px;
+}
+
+#banner .banner_link a:first-child:hover {
+  background: transparent;
+  outline: 2px solid var(--black);
+  color: var(--black);
+}
+
+#banner .banner_link span {
+  display: inline-flex;
+  line-height: 0;
+  align-items: center;
+}
+
+#banner .follow {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#banner .follow p {
+  margin-bottom: 0;
+}
+
+#banner .banner_social_icons {
+  display: flex;
+  align-items: center;
+}
+
+#banner .banner_social_icons a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  color: var(--black);
+  padding: 10px;
+  background: #F4F3F3;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+#banner .banner_social_icons a:hover {
+  transform: rotate(45deg);
+
+}
+
+/* =============== BANNER END ======================*/
+
+/* ===============ABOUT CSS START ====================*/
+#about {
+
+  padding-top: 50px;
+  position: relative;
+  background: linear-gradient(to right, #FED62A, #FAFFCB);
+}
+
+
+#about .contains h4 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  color: #353535;
+}
+
+#about .contains p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  color: #353535;
+  padding: 26px 0 44px 0;
+}
+
+#about .contains a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #353535;
+  display: inline-block;
+  text-decoration: none;
+  padding: 17px 44px;
+  outline: 1px solid #000000;
+  border-radius: 20px;
+
+}
+
+#about .shape img {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+
+/* ===============ABOUT CSS END ======================*/
+
+
+/* =============== CSS CARD START ====================*/
+#card {
+  padding: 50px 0;
+}
+
+#card .card_box {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  text-align: center;
+  width: calc(33.33% - 32px);
+  margin: 16px;
+  padding: 47px;
+  cursor: pointer;
+}
+
+#card .card_box:hover img {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#card h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 180%;
+  text-align: center;
+  color: #353535;
+  padding: 16px 0;
+}
+
+#card p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+/* =============== CSS CARD END ======================*/
+
+#confution .container {
+  border-radius: 30px;
+  position: relative;
+  background: linear-gradient(to right, #FED62A, #FAFFCB);
+}
+
+
+
+#confution h4 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  color: #353535;
+  padding-top: 20px;
+}
+
+#confution p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  color: #353535;
+  padding: 26px 44px 24px 0;
+}
+
+#confution a {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #353535;
+  display: inline-block;
+  text-decoration: none;
+  padding: 17px 44px;
+  outline: 1px solid #000000;
+  border-radius: 20px;
+
+}
+
+#confution .shape img {
+  position: absolute;
+  top: -37px;
+  right: 29px;
+}
+
+#help{
+  padding: 50px 0;
+}
+#help .img_content .d-flex {
+  padding: 16px 29px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  margin-bottom: 24px;
+  border-radius: 24px;
+
+
+}
+
+#help .img_content .d-flex h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+  color: #353535;
+}
+
+#help .img_content .d-flex p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 180%;
+  color: #353535;
+}
+
+#help .img_content .d-flex img {
+  background-color: #55852F;
+  padding: 13px;
+  border-radius: 50%;
+}
+
+#help .details {
+
+  padding-left: 18px;
+}
+
+#help .contains_details h4 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  text-align: right;
+  color: #353535;
+}
+
+#help .contains_details p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  text-align: right;
+  color: #353535;
+}
